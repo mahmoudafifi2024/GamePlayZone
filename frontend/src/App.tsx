@@ -1,12 +1,20 @@
-// cmd: src/App.tsx
-import { useState } from 'react';
-import { ThemeProvider, CssBaseline, Container } from '@mui/material';
+import { useState, useEffect } from 'react';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import { getTheme } from './theme';
 import NavBar from './Components/Utility/NavBar';
-import Slider from './Components/Home/Slider';
+import HomePage from './Pages/Home/HomePage';
 
 function App() {
-  const [mode, setMode] = useState<'light' | 'dark'>('light');
+  
+  const [mode, setMode] = useState<'light' | 'dark'>(() => {
+    const savedMode = localStorage.getItem('themeMode');
+    return savedMode === 'dark' ? 'dark' : 'light';
+  });
+
+
+  useEffect(() => {
+    localStorage.setItem('themeMode', mode);
+  }, [mode]);
 
   const toggleTheme = () => {
     setMode(prev => (prev === 'light' ? 'dark' : 'light'));
@@ -17,13 +25,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
-      <Container >
-      </Container>
       <NavBar mode={mode} toggleTheme={toggleTheme} />
-      <Slider />
-
-
+      <HomePage />
     </ThemeProvider>
   );
 }
