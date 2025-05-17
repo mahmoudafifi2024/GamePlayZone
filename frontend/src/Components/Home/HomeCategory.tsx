@@ -34,7 +34,9 @@ const HomeCategory: React.FC = () => {
 
   return (
     <Container sx={{ py: 4 }}>
+
       <SubTitle title="Main Categories" btntitle="See All" pathText="/categories" />
+
       <Box
         sx={{
           display: 'grid',
@@ -57,6 +59,7 @@ const HomeCategory: React.FC = () => {
           </Box>
         ))}
       </Box>
+      
     </Container>
   );
 };
