@@ -35,7 +35,6 @@
             }
             }}
         >
-            {/* صندوق الصورة الدائري */}
             <Box
             sx={{
                 width: 140,
@@ -56,7 +55,8 @@
             </Box>
 
             <Typography
-            variant="subtitle1"
+            color="primary"
+            variant="body1"
             component="p"
             sx={{ mt: 1, fontWeight: 'bold' }}
             >
