@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Container } from "@mui/material";
+import {  Box, Container } from "@mui/material";
 import ProductCard from "./ProductCard";
 
 import Product from "../../images/product-phone.jpeg";
@@ -29,7 +29,7 @@ products?: Product[];
 
 // CardProductsContainer component
 const CardProductsContainer: React.FC<CardProductsContainerProps> = ({
-title,
+title = "Products",
 btntitle,
 pathText,
 products = [],
@@ -77,20 +77,20 @@ const displayProducts = products.length > 0 ? products : defaultProducts;
 return (
     <Container sx={{ py: 4 }}>
     {/* Section title and optional button */}
-    <SubTitle title="Products" btntitle="See more" pathText="/products" />
+    <SubTitle title={title} btntitle={btntitle} pathText={pathText} />
 
     {/* Products grid */}
     <Box
-         sx={{
+        sx={{
             display: 'grid',
             gridTemplateColumns: {
-              xs: '1fr',
-              sm: 'repeat(2, 1fr)',
-              md: 'repeat(3, 1fr)',
+            xs: '1fr',
+            sm: 'repeat(2, 1fr)',
+            md: 'repeat(3, 1fr)',
             },
             gap: 3,
             mt: 3,
-          }}
+        }}
     >
         {displayProducts.map((product) => (
         <Box item xs={12} sm={6} md={4} key={product._id}>
