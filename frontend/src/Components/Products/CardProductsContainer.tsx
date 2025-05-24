@@ -93,9 +93,9 @@ return (
         }}
     >
         {displayProducts.map((product) => (
-        <Box item xs={12} sm={6} md={4} key={product._id}>
+        <div  style={{margin:"auto"}}>
             <ProductCard product={product} />
-        </Box>
+        </div>
         ))}
     </Box>
     </Container>

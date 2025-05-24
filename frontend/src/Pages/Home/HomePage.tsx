@@ -12,7 +12,7 @@ return (
     <HomeCategory/>
     <CardProductsContainer title='Amazing Products' btntitle='See more' pathText='/products'/>
     <DiscountSection/>
-    <BrandFeatured/>
+    <BrandFeatured />
     </div>
 )
 }
