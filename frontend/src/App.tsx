@@ -10,7 +10,7 @@ import Footer from './Components/Utility/Footer';
 const HomePage = lazy(() => import("./Pages/Home/HomePage"));
 const LoginPage = lazy(() => import('./Pages/Auth/LoginPage'));
 const RegisterPage = lazy(() => import('./Pages/Auth/RegisterPage'));
-// const AllCategoryPage = lazy(() => import("./Page/Category/AllCategoryPage"));
+const AllCategoryPage = lazy(() => import('./Pages/Category/AllCategoryPage'));
 // const AllBrandPage = lazy(() => import("./Page/Brand/AllBrandPage"));
 // const ShopProductsPage = lazy(() => import("./Page/Products/ShopProductsPage"));
 // const ProductDetalisPage = lazy(() => import("./Page/Products/ProductDetailsPage"));
@@ -70,6 +70,14 @@ function App() {
           {/* Login and Register */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          
+            {/* Store and Products */}
+            <Route path="/allcategory" element={<AllCategoryPage />} />
+            {/* <Route path="/allbrand" element={<AllBrandPage />} /> */}
+            {/* <Route path="/products" element={<ShopProductsPage />} /> */}
+            {/* <Route path="/products/:id" element={<ProductDetalisPage />} /> */}
+            {/* <Route path="/cart" element={<CartPage />} /> */}
+            {/* <Route path="/order/paymethoud" element={<ChoosePayMethoudPage />} /> */}
         </Routes>
         <Footer />
     </ThemeProvider>
