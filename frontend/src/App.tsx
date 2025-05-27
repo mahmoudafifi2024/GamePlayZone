@@ -11,7 +11,7 @@ const HomePage = lazy(() => import("./Pages/Home/HomePage"));
 const LoginPage = lazy(() => import('./Pages/Auth/LoginPage'));
 const RegisterPage = lazy(() => import('./Pages/Auth/RegisterPage'));
 const AllCategoryPage = lazy(() => import('./Pages/Category/AllCategoryPage'));
-// const AllBrandPage = lazy(() => import("./Page/Brand/AllBrandPage"));
+const AllBrandPage = lazy(() => import('./Pages/Brand/AllBrandPage'));
 // const ShopProductsPage = lazy(() => import("./Page/Products/ShopProductsPage"));
 // const ProductDetalisPage = lazy(() => import("./Page/Products/ProductDetailsPage"));
 // const CartPage = lazy(() => import("./Page/Cart/CartPage"));
@@ -73,7 +73,7 @@ function App() {
           
             {/* Store and Products */}
             <Route path="/allcategory" element={<AllCategoryPage />} />
-            {/* <Route path="/allbrand" element={<AllBrandPage />} /> */}
+            <Route path="/allbrand" element={<AllBrandPage />} />
             {/* <Route path="/products" element={<ShopProductsPage />} /> */}
             {/* <Route path="/products/:id" element={<ProductDetalisPage />} /> */}
             {/* <Route path="/cart" element={<CartPage />} /> */}
