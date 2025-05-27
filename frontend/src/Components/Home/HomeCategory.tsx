@@ -35,7 +35,7 @@ const HomeCategory: React.FC = () => {
   return (
     <Container sx={{ py: 4 }}>
 
-      <SubTitle title="Main Categories" btntitle="See All" pathText="/categories" />
+      <SubTitle title="Main Categories" btntitle="See All" pathText="allcategory" />
 
       <Box
         sx={{
