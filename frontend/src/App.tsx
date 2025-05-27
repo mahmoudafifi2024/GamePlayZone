@@ -12,7 +12,7 @@ const LoginPage = lazy(() => import('./Pages/Auth/LoginPage'));
 const RegisterPage = lazy(() => import('./Pages/Auth/RegisterPage'));
 const AllCategoryPage = lazy(() => import('./Pages/Category/AllCategoryPage'));
 const AllBrandPage = lazy(() => import('./Pages/Brand/AllBrandPage'));
-// const ShopProductsPage = lazy(() => import("./Page/Products/ShopProductsPage"));
+const ShopProductsPage = lazy(() => import("./Pages/Products/ShopProductsPage"));
 // const ProductDetalisPage = lazy(() => import("./Page/Products/ProductDetailsPage"));
 // const CartPage = lazy(() => import("./Page/Cart/CartPage"));
 // const ChoosePayMethoudPage = lazy(() => import("./Page/Checkout/ChoosePayMethodPage"));
@@ -74,7 +74,7 @@ function App() {
             {/* Store and Products */}
             <Route path="/allcategory" element={<AllCategoryPage />} />
             <Route path="/allbrand" element={<AllBrandPage />} />
-            {/* <Route path="/products" element={<ShopProductsPage />} /> */}
+            <Route path="/products" element={<ShopProductsPage />} />
             {/* <Route path="/products/:id" element={<ProductDetalisPage />} /> */}
             {/* <Route path="/cart" element={<CartPage />} /> */}
             {/* <Route path="/order/paymethoud" element={<ChoosePayMethoudPage />} /> */}
