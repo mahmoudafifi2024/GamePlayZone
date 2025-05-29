@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Grid } from '@mui/material';
 import CategoryHeader from '../../Components/Category/CategoryHeader';
 import CardProductsContainer from '../../Components/Products/CardProductsContainer';
-import Pagination from '../../Components/Utility/Pagination'; // Your custom Pagination component
 import SearchCountResult from '../../Components/Utility/SearchCountResult';
 import SideFilter from '../../Components/Utility/SideFilter';
+import Pagination from '../../Components/Utility/Pagination'; // Your custom Pagination component
 
 import Product from '../../images/product-phone.jpeg'
 import Product1 from '../../images/product-phone1.jpeg'

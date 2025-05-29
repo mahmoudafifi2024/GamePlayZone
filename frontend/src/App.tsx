@@ -13,8 +13,8 @@ const RegisterPage = lazy(() => import('./Pages/Auth/RegisterPage'));
 const AllCategoryPage = lazy(() => import('./Pages/Category/AllCategoryPage'));
 const AllBrandPage = lazy(() => import('./Pages/Brand/AllBrandPage'));
 const ShopProductsPage = lazy(() => import("./Pages/Products/ShopProductsPage"));
-// const ProductDetalisPage = lazy(() => import("./Page/Products/ProductDetailsPage"));
-// const CartPage = lazy(() => import("./Page/Cart/CartPage"));
+const ProductDetailsPage = lazy(() => import('./Pages/Products/ProductDetailsPage'));
+const CartPage = lazy(() => import('./Pages/Cart/CartPage'));
 // const ChoosePayMethoudPage = lazy(() => import("./Page/Checkout/ChoosePayMethodPage"));
 
 // // Admin Pages
@@ -75,8 +75,8 @@ function App() {
             <Route path="/allcategory" element={<AllCategoryPage />} />
             <Route path="/allbrand" element={<AllBrandPage />} />
             <Route path="/products" element={<ShopProductsPage />} />
-            {/* <Route path="/products/:id" element={<ProductDetalisPage />} /> */}
-            {/* <Route path="/cart" element={<CartPage />} /> */}
+            <Route path="/products/:id" element={<ProductDetailsPage />} />
+            <Route path="/cart" element={<CartPage />} />
             {/* <Route path="/order/paymethoud" element={<ChoosePayMethoudPage />} /> */}
         </Routes>
         <Footer />
