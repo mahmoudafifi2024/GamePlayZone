@@ -83,12 +83,12 @@ return (
 
         <Grid gap={10} container spacing={2} sx={{ mt: 1 }}>
         {/* Side filter */}
-        <Grid item xs={12} sm={2} md={11} sx={{ display: 'flex' }}>
+        <Grid  xs={12} sm={2} md={11} sx={{ display: 'flex' }}>
             <SideFilter />
         </Grid>
 
         {/* Products list */}
-        <Grid item xs={12} sm={10} md={11}>
+        <Grid xs={12} sm={10} md={11}>
             <CardProductsContainer 
             products={products} 
             title="Available Products" 

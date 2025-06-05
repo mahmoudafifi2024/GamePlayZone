@@ -1,6 +1,6 @@
 // src/components/Brand/BrandCard.tsx
 import React from 'react';
-import { Card, CardContent, Typography, Grid, Avatar, Box } from '@mui/material';
+import { Card, CardContent, Typography, Avatar, Box } from '@mui/material';
 
 interface BrandCardProps {
 img: string;
@@ -9,7 +9,19 @@ name?: string;
 
 const BrandCard: React.FC<BrandCardProps> = ({ img, name }) => {
 return (
-    <Grid item xs={6} sm={4} md={3} lg={2} display="flex" justifyContent="center">
+    <Box 
+        sx={{
+            width: {
+                xs: '50%',
+                sm: '33.33%',
+                md: '25%',
+                lg: '16.66%'
+            },
+            display: 'flex',
+            justifyContent: 'center',
+            p: 1
+        }}
+    >
     <Card
         sx={{
         width: 140,
@@ -46,7 +58,7 @@ return (
         </CardContent>
         )}
     </Card>
-    </Grid>
+    </Box>
 );
 };
 
