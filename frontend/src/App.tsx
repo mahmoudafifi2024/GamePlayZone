@@ -18,8 +18,8 @@ const CartPage = lazy(() => import('./Pages/Cart/CartPage'));
 const ChoosePayMethoudPage = lazy(() => import('./Pages/Checkout/ChoosePayMethodPage'));
 
 // // Admin Pages
-// const AdminAllProductsPage = lazy(() => import("./Page/Admin/AdminAllProductsPage"));
-// const AdminAllOrdersPage = lazy(() => import("./Page/Admin/AdminAllOrdersPage"));
+const AdminAllProductsPage = lazy(() => import("./Pages/Admin/AdminAllProductsPage"));
+// const AdminAllOrdersPage = lazy(() => import("./Pages/Admin/AdminAllOrdersPage"));
 // const AdminOrderDetalisPage = lazy(() => import("./Page/Admin/AdminOrderDetailsPage"));
 // const AdminAddBrandPage = lazy(() => import("./Page/Admin/AdminAddBrandPage"));
 // const AdminAddCategoryPage = lazy(() => import("./Page/Admin/AdminAddCategoryPage"));
@@ -82,7 +82,7 @@ function App() {
             <Route path="/order/paymethoud" element={<ChoosePayMethoudPage />} /> 
 
             {/* Admin Pages */}
-            {/* <Route path="/admin/allproducts" element={<AdminAllProductsPage />} /> */}
+            <Route path="/admin/allproducts" element={<AdminAllProductsPage />} />
             {/* <Route path="/admin/allorders" element={<AdminAllOrdersPage />} /> */}
             {/* <Route path="/admin/orders/:id" element={<AdminOrderDetalisPage />} /> */}
             {/* <Route path="/admin/addbrand" element={<AdminAddBrandPage />} /> */}
